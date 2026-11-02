@@ -110,7 +110,7 @@ window.DK = {
     { src: "assets/img/cinema-sala.webp", legenda: "Sessão de cinema", escolha: "cinema:night" },
     { src: "assets/img/exp-art.webp", legenda: "Peças decoradas no Dreamy Art", escolha: "entrada:art" },
     { src: "assets/img/exp-gaming.webp", legenda: "Gaming Zone", escolha: "entrada:gaming" },
-    { src: "assets/img/exp-spa.webp", legenda: "Dreamy Spa", escolha: "entrada:spa" },
+    { src: "assets/img/exp-spa-mesa.webp", legenda: "Dreamy Spa", escolha: "entrada:spa" },
     { src: "assets/img/exp-print.webp", legenda: "Criações do Dreamy Print", escolha: "entrada:print" },
     { src: "assets/img/exp-arena.webp", legenda: "Arena dos Desafios", escolha: "entrada:gaming" },
     { src: "assets/img/exp-makeup.webp", legenda: "Make-up e penteados", escolha: "entrada:spa" }

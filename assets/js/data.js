@@ -23,7 +23,7 @@ window.DK = {
   },
 
   site: {
-    url: "",               // PENDENTE · domínio final, para Open Graph e sitemap
+    url: "https://dreamykids.pt/",
   },
 
   condicoes: {
@@ -130,7 +130,6 @@ window.DK = {
     "Número máximo de crianças por festa",
     "Regras de reserva, sinal e cancelamento",
     "Perfis oficiais nas redes sociais",
-    "Domínio final do site",
     "Preços: as artes (Fun 26 €, Mix 30 €, VIP 40 €, Creator 45 €) contradizem o PDF (Mix 26 €, VIP 30 €, All-In 40 €). O site usa as artes.",
     "Experiências individuais: artes (Spa 18 €, Slime 18 €, Art 20 €, Print 20 €, Gaming 12 €) contradizem o PDF (Spa 27 €, Slime 28 €, Decor 28 €, Print 28 €, Cinema 20 €, Play 20 €)",
     "Nomes: PDF usa Dreamy Decor, Dreamy Play, Dreamy Lime e Dreamy All-In; artes usam Dreamy Art e Dreamy Creator",

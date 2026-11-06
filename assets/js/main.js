@@ -51,7 +51,8 @@
   function renderPacks() {
     var g = $("#packs-grelha");
     g.innerHTML = DK.packs.map(function (p) {
-      var sempre = DK.packsIncluiSempre.map(function (i) {
+      var mais = p.incluiMais ? "<li>" + esc(p.incluiMais.nome) + "<small>" + esc(p.incluiMais.texto) + "</small></li>" : "";
+      var sempre = mais + DK.packsIncluiSempre.map(function (i) {
         var det = i === "Arena dos Desafios" ? '<small>' + esc(p.arena || DK.arenaPadrao) + '</small>' : "";
         return "<li>" + esc(i) + det + "</li>";
       }).join("");
@@ -110,7 +111,8 @@
     $("#menus-grelha").innerHTML = DK.menus.map(function (m) {
       return '<article class="menu" data-reveal><div class="menu__img"><img src="' + m.img + '" alt="Imagem ilustrativa do ' + esc(m.nome) + '" loading="lazy" width="480" height="260"></div>' +
         '<div class="menu__corpo"><p class="menu__lema">' + esc(m.lema) + '</p><div class="menu__cab"><h3>' + esc(m.nome) + '</h3><p class="menu__preco">' + euro(m.preco) + "<span>por criança</span></p></div><ul>" +
-        m.inclui.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div></article>";
+        m.inclui.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" +
+        (DK.menuBolo ? '<p class="menu__bolo">' + esc(DK.menuBolo) + "</p>" : "") + "</div></article>";
     }).join("");
   }
 
@@ -184,7 +186,7 @@
       { q: "Qual é o número mínimo de crianças por festa?", r: "Todas as festas de aniversário têm um mínimo de " + c.minimoCriancas + " crianças." + (c.maximoCriancas ? " O máximo é de " + c.maximoCriancas + "." : "") },
       { q: "Quanto tempo dura uma festa?", r: c.duracaoFesta + "." },
       { q: "Posso personalizar o meu pack?", r: "Sim. Fala connosco e criamos uma festa à tua medida, com as experiências e o menu que preferires." },
-      { q: "Posso adicionar menus de comida?", r: "Sim. Os menus Dreamy, Pizza e Cinema podem ser adicionados a qualquer pack." },
+      { q: "Posso adicionar menus de comida?", r: "Sim. Os menus Dreamy e Pizza podem ser adicionados a qualquer pack, e a qualquer um deles podes juntar o bolo de aniversário." },
       { q: "Existem experiências sem aniversário?", r: "Sim. Há entradas individuais de 1 ou 2 horas e o Dreamy Cinema Night às sextas, sábados e domingos." },
       { q: "Como posso reservar?", r: "Escolhe o pack ou a experiência e envia-nos o teu pedido" + canal + ". A equipa confirma contigo os detalhes e a disponibilidade." },
       { q: "Quais são as idades recomendadas?", r: c.idades, pendente: !c.idades },

@@ -41,9 +41,16 @@ window.DK = {
       extra: null
     },
     {
-      id: "mix", nome: "Dreamy Mix", preco: 30, cor: "roxo",
-      escolha: "2 experiências",
+      id: "glow", nome: "Dreamy Glow Party", preco: 32, cor: "glow",
+      escolha: "1 experiência à escolha",
       opcoes: ["Spa", "Slime"],
+      extra: null,
+      incluiMais: { nome: "Glow Disco", texto: "Discoteca com luzes néon e muita dança" }
+    },
+    {
+      id: "mix", nome: "Dreamy Mix", preco: 30, cor: "roxo",
+      escolha: "2 experiências à escolha",
+      opcoes: ["Spa", "Slime", "Art"],
       extra: null
     },
     {
@@ -57,12 +64,11 @@ window.DK = {
       escolha: "4 experiências",
       opcoes: ["Spa", "Slime", "Art", "Print"],
       extra: null,
-      destaque: "Todas as experiências",
-      arena: "Futebol, basquetebol e tiro ao alvo"
+      destaque: "O mais completo"
     }
   ],
   packsIncluiSempre: ["Gaming Zone", "Arena dos Desafios", "Make-up e penteados"],
-  arenaPadrao: "Futebol e tiro ao alvo",
+  arenaPadrao: "Futebol, tiro ao alvo, basquetebol, matraquilhos, mesa de disco e muito mais",
 
   extras: [
     { id: "slime", nome: "Slime Extra", preco: 4, texto: "Mais um slime, com novas cores e acessórios." },
@@ -71,12 +77,12 @@ window.DK = {
   ],
 
   entradas: [
-    { id: "gaming", nome: "Gaming + Challenge Zone", duracao: "1h", preco: 12, texto: "Videojogos, futebol e tiro ao alvo." },
+    { id: "gaming", nome: "Gaming + Arena dos Desafios", duracao: "1h", preco: 12, texto: "Videojogos, futebol, tiro ao alvo, basquetebol, matraquilhos, mesa de disco e muito mais." },
     { id: "spa", nome: "Dreamy Spa & Make-up", duracao: "1h", preco: 18, texto: "Cuidados de rosto, relaxamento, maquilhagem, penteados e acessórios." },
     { id: "slime", nome: "Slime Experience", duracao: "1h", preco: 18, texto: "Cria e personaliza o teu próprio slime." },
     { id: "art", nome: "Dreamy Art", duracao: "1h", preco: 20, texto: "Decora uma peça e leva-a para casa." },
     { id: "print", nome: "Dreamy Print", duracao: "1h", preco: 20, texto: "Estampagem personalizada para levar para casa." },
-    { id: "afternoon", nome: "Dreamy Afternoon", duracao: "2h", preco: 25, texto: "Gaming, minijogos e 1 experiência à escolha." }
+    { id: "afternoon", nome: "Dreamy Afternoon", duracao: "2h", preco: 25, texto: "Gaming, Arena dos Desafios e 1 experiência à escolha." }
   ],
 
   cinema: {
@@ -93,13 +99,12 @@ window.DK = {
     ]
   },
 
+  menuBolo: "Bolo de aniversário: +35 €", // acrescento mostrado em todos os menus
   menus: [
     { id: "dreamy", nome: "Menu Dreamy", lema: "Lanchinho delicioso", preco: 6, img: "assets/img/menu-dreamy.webp",
-      inclui: ["Croissants com fiambre e queijo", "Sumos", "Água", "Fruta", "Gomas", "Decoração de mesa"] },
+      inclui: ["Croissants com fiambre e queijo", "Batatas fritas", "Sumos", "Água", "Fruta", "Gomas", "Decoração de mesa"] },
     { id: "pizza", nome: "Menu Pizza", lema: "Sabores que fazem festa", preco: 8, img: "assets/img/menu-pizza.webp",
-      inclui: ["Pizza", "Batatas fritas", "Sumos", "Água", "Salame", "Gomas", "Decoração de mesa"] },
-    { id: "cinema", nome: "Menu Cinema", lema: "Para uma noite especial", preco: 8, img: "assets/img/menu-cinema.webp",
-      inclui: ["Pizza", "Pipocas", "Sumos", "Água", "Gelado", "Gomas", "Decoração temática de cinema"] }
+      inclui: ["Pizza", "Batatas fritas", "Sumos", "Água", "Salame", "Gomas", "Decoração de mesa"] }
   ],
 
   // Galeria desligada (2026-10-09): repetia as fotos das estações. Para reativar com fotos reais do espaço,
@@ -130,7 +135,8 @@ window.DK = {
     "Experiências individuais: artes (Spa 18 €, Slime 18 €, Art 20 €, Print 20 €, Gaming 12 €) contradizem o PDF (Spa 27 €, Slime 28 €, Decor 28 €, Print 28 €, Cinema 20 €, Play 20 €)",
     "Nomes: PDF usa Dreamy Decor, Dreamy Play, Dreamy Lime e Dreamy All-In; artes usam Dreamy Art e Dreamy Creator",
     "Horários do Cinema Night (sexta 18h00 às 21h00; sábado e domingo 17h00 às 20h00)",
-    "Dreamy Mix: confirmar se as 2 experiências são sempre Spa e Slime",
+    "Dreamy Mix: confirmar que a 3.ª experiência é o Dreamy Art",
+    "Bolo de aniversário +35 €: confirmar que é um valor por festa e não por criança",
     "Fotografias reais do espaço e das experiências (as atuais são ilustrativas)",
     "Imagem das crianças na hero: confirmar direitos de uso; não apresentar como clientes nem como o espaço real",
     "Logótipo em alta resolução, com fundo transparente e versão para fundo escuro"

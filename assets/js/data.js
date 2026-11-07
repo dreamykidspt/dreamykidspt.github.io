@@ -99,7 +99,7 @@ window.DK = {
     ]
   },
 
-  menuBolo: "Bolo de aniversário: +35 €", // acrescento mostrado em todos os menus
+  menuBolo: "Bolo de aniversário: +35 € por festa", // acrescento mostrado em todos os menus (valor por festa, confirmado pela cliente em 2026-11-07)
   menus: [
     { id: "dreamy", nome: "Menu Dreamy", lema: "Lanchinho delicioso", preco: 6, img: "assets/img/menu-dreamy.webp",
       inclui: ["Croissants com fiambre e queijo", "Batatas fritas", "Sumos", "Água", "Fruta", "Gomas", "Decoração de mesa"] },
@@ -134,8 +134,6 @@ window.DK = {
     "Experiências individuais: artes (Spa 18 €, Slime 18 €, Art 20 €, Print 20 €, Gaming 12 €) contradizem o PDF (Spa 27 €, Slime 28 €, Decor 28 €, Print 28 €, Cinema 20 €, Play 20 €)",
     "Nomes: PDF usa Dreamy Decor, Dreamy Play, Dreamy Lime e Dreamy All-In; artes usam Dreamy Art e Dreamy Creator",
     "Horários do Cinema Night (sexta 18h00 às 21h00; sábado e domingo 17h00 às 20h00)",
-    "Dreamy Mix: confirmar que a 3.ª experiência é o Dreamy Art",
-    "Bolo de aniversário +35 €: confirmar que é um valor por festa e não por criança",
     "Fotografias reais do espaço e das experiências (as atuais são ilustrativas)",
     "Imagem das crianças na hero: confirmar direitos de uso; não apresentar como clientes nem como o espaço real",
     "Logótipo em alta resolução, com fundo transparente e versão para fundo escuro"
